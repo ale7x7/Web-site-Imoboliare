@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Informatii meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Wealthome">
+  <meta name="description" content="This is a real estate website developed by codewithsadee">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- Fonturi Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0" />
+
+  <!-- legatura cu CSS -->
+  <link rel="stylesheet" href="./CSS/style.css">
+
+  <!-- Legatura cu JS) -->
+  <script src="./JS/script.js" defer></script>
+
+  <!-- Titlul paginii -->
+  <title>Wealthome</title>
+</head>
+<body>
+  <!-- Sectiunea header-ului -->
+  <header class="header" data-header>
+    <div class="container">
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <img src="./IMG/logo.png" width="190" height="28" alt="Wealthome">
+      </a>
+
+      <!-- Bara de navigare -->
+      <nav class="navbar" data-navbar>
+        <!--Linkuri pentru navbar -->
+        <ul class="navbar-list">
+          <li><a href="#" class="navbar-link label-medium active">Acasă</a></li>
+          <li><a href="#" class="navbar-link label-medium">Arendeaza</a></li>
+          <li><a href="#" class="navbar-link label-medium">Vinde</a></li>
+          <li><a href="#" class="navbar-link label-medium">Cumpara</a></li>
+          <li><a href="#" class="navbar-link label-medium">Despre</a></li>
+        </ul>
+
+        <!-- Conectare si Înregistrare -->
+        <div class="navbar-wrapper">
+          <a href="http://127.0.0.1:5500/singUp.html" class="btn-link label-medium">Inregistreaza-te</a>
+          <a href="http://127.0.0.1:5500/singIn.html" class="btn btn-fill label-medium">Conecteaza-te</a>
+        </div>
+      </nav>
+
+      <!-- Navigarea pentru telefoane -->
+      <button class="nav-toggle-btn icon-btn" aria-label="toggle navbar" data-nav-toggler>
+        <span class="material-symbols-rounded open" aria-hidden="true">menu</span>
+        <span class="material-symbols-rounded close" aria-hidden="true">close</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <article>
+      <!-- Sectiunea HERO -->
+      <section class="hero">
+        <div class="container">
+          <!-- Text si bara de cautare -->
+          <div class="hero-content">
+            <h1 class="headline-large hero-title">Găsește un loc unde poți fi tu însuți.</h1>
+            <p class="body-large hero-text">
+              Dacă ești în căutarea unui loc în care poți fi tu însuți, nu renunța. Continuați să căutați până când găsiți un loc care să vă simțiți ca acasă.
+            </p>
+
+            <!-- Search Bar Form -->
+            <form action="./" method="get" class="search-bar">
+              <!-- Optiunile de cautare -->
+              <label class="search-item">
+                <span class="label-medium label">Vreau</span>
+                <select name="want-to" class="search-item-field body-medium">
+                  <option value="buy" selected>Cumpar</option>
+                  <option value="sell">Vand</option>
+                  <option value="rent">Arendez</option>
+                </select>
+                <span class="material-symbols-rounded" aria-hidden="true">agent_imobiliar</span>
+              </label>
+
+              <!-- Tipurile de proprietati -->
+              <label class="search-item">
+                <span class="label-medium label">Tip de proprietate</span>
+                <select name="property-type" class="search-item-field body-medium">
+                  <option value="any" selected>Toate</option>
+                  <option value="houses">Case</option>
+                  <option value="apartments">Apartamente</option>
+                  <option value="villa">Vil</option>
+                </select>
+                <span class="material-symbols-rounded" aria-hidden="true">gite</span>
+              </label>
+
+              <!--  Locatia -->
+              <label class="search-item">
+                <span class="label-medium label">Locatia</span>
+                <input type="text" name="location" placeholder="Strada,Oras..." class="search-item-field body-medium">
+                <span class="material-symbols-rounded" aria-hidden="true">location_on</span>
+              </label>
+
+              <!-- Butonul de cautare -->
+              <button type="submit" class="search-btn">
+                <span class="material-symbols-rounded" aria-hidden="true">search</span>
+                <span class="label-medium">Caută</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Imagini pentru Hero -->
+          <img src="./IMG/hero.png" width="816" height="659" role="presentation" class="hero-banner">
+          <img src="./IMG/bg-pattern.png" width="1240" height="840" role="presentation" class="bg-pattern">
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Informații Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Inregistrare/Wealthome">
+    <meta name="description" content="Aceasta este pagina de înregistrare pentru Wealthome, un site de imobiliare.">
+
+    <!-- Titlul Paginii -->
+    <title>Înregistrare/Wealthome</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- Fișier CSS -->
+    <link rel="stylesheet" href="./singUp.css">
+</head>
+<body>
+    <!-- Container Principal -->
+    <div class="main">
+        <!-- Logo și Link către Pagina Principală -->
+        <a href="index.html" class="logo">
+            <span class="icon">🏠</span>Wealthome
+        </a>
+
+        <!-- Secțiunea Formularului de Înregistrare -->
+        <div class="form-box">
+            <!-- Titlul Formularului -->
+            <h2>Înregistrează-te</h2>
+
+            <!-- Formular de Înregistrare -->
+            <form>
+                <!-- Câmp pentru Nume de Utilizator -->
+                <div class="input">
+                    <label for="username">Nume de utilizator</label>
+                    <input type="text" id="username" placeholder="Alege un nume de utilizator" required>
+                </div>
+
+                <!-- Câmp pentru Email -->
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Introdu email-ul" required>
+                </div>
+
+                <!-- Câmp pentru Parolă -->
+                <div class="input">
+                    <label for="password">Parolă</label>
+                    <input type="password" id="password" placeholder="Alege o parolă" required>
+                </div>
+
+                <!-- Câmp pentru Confirmarea Parolei -->
+                <div class="input">
+                    <label for="confirm-password">Confirmă parola</label>
+                    <input type="password" id="confirm-password" placeholder="Confirmă parola" required>
+                </div>
+
+                <!-- Buton pentru Trimiterea Formularului -->
+                <button type="submit" class="btn-signup">Înregistrează-te</button>
+
+                <!-- Link către Pagina de Conectare -->
+                <a href="./singIn.html" class="btn-login">Am deja un profil</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

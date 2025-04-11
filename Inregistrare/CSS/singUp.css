@@ -1,0 +1,142 @@
+/* Resetare stiluri implicite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Stiluri pentru corpul paginii și fundal */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1a2a6c 50%, #4a4e69 50%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efect decorativ de fundal cu pseudo-element */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.1) 50%) 10% 10% / 100px 100px,
+        linear-gradient(-45deg, transparent 50%, rgba(255, 255, 255, 0.1) 50%) 10% 10% / 100px 100px,
+        linear-gradient(90deg, transparent 70%, rgba(255, 255, 255, 0.1) 70%) 80% 20% / 50px 200px,
+        linear-gradient(90deg, transparent 70%, rgba(255, 255, 255, 0.1) 70%) 85% 30% / 40px 250px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+/* Stiluri pentru containerul principal */
+.main {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Stiluri pentru logo */
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+/* Stiluri pentru pictograma din logo */
+.logo .icon {
+    margin-right: 5px;
+}
+
+/* Stiluri pentru containerul formularului */
+.form-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Stiluri pentru titlul formularului */
+.form-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Stiluri pentru câmpurile de introducere */
+.input {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Stiluri pentru etichetele câmpurilor */
+.input label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Stiluri pentru input-urile formularului */
+.input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Stiluri pentru butonul de înregistrare */
+.btn-signup {
+    width: 100%;
+    padding: 12px;
+    background: #4a4e69;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 10px;
+}
+
+/* Efect hover pentru butonul de înregistrare */
+.btn-signup:hover {
+    background: #5a5e79;
+}
+
+/* Stiluri pentru butonul de conectare */
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background: #1a2a6c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Efect hover pentru butonul de conectare */
+.btn-login:hover {
+    background: #2b3e8a;
+}
+
+/* Stiluri pentru pictogramă */
+.icon { 
+    align-items: center;
+}
